@@ -22,11 +22,11 @@ Here are a few key points:
 
 ### Prepare the Plan for Execution
 
-| Model | Input | Cache Create | Cache Read | Output | Total Tokens |
+| Model | Input | Cache Create | Cache Read | Output | Total Tokens | Total Estimated Cost |
 | ---: | ---: | ---: | ---: | ---: | ---: |
 |sonnet-5 | 74 | 520,335 | 3,794,964 | 76,123 | |
 |sonnet-4-6 | 57 | 127,581 | 1,561,909 | 12,191 | |
-|**Total** | | | | | **~6,093,234** |
+|**Totals** | | | | | **~6,093,234** | **~$8.2** |
 
 **Per-prompt breakdown**
 
@@ -80,13 +80,13 @@ Here are a few key points:
 
 ### Reviewing With Conductor
 
-Conductor ran three parallel sessions, each auditing the implementation against a different part of `reviewed-feature-plan.md`, plus one separate review pass over the branch. Each session had a single prompt, so the per-session and per-prompt totals are the same.
+Conductor ran three parallel sessions, each auditing the implementation against a different part of **reviewed-feature-plan.md**, plus one separate review pass over the branch. Each session had a single prompt, so the per-session and per-prompt totals are the same.
 
-| Model | Input | Cache Create | Cache Read | Output | Total Tokens |
+| Model | Input | Cache Create | Cache Read | Output | Total Tokens | Total Estimated Cost |
 | ---: | ---: | ---: | ---: | ---: | ---: |
 |sonnet-5 | 208 | 906,254 | 12,667,445 | 77,814 | |
 |sonnet-4-6 | 19 | 118,303 | 859,235 | 24,558 | |
-|**Total** | | | | | **~14,653,836** |
+|**Totals** | | | | | **~14,653,836** | **~$8.2** |
 
 *Session 1: Audit Against Goals and Non-Goals*
 
@@ -122,12 +122,12 @@ Each specialist agent ran as its own single-prompt conversation.
 
 *Prompt 1: Run the Dynamic Type Specialist*
 
-| Model | Input | Cache Create | Cache Read | Output | Total Tokens |
-| ---: | ---: | ---: | ---: | ---: | ---: |
-|sonnet-5 | 16 | 27,654 | 651,757 | 10,066 | **~689,493** |
+| Model | Input | Cache Create | Cache Read | Output | Total Tokens | Total Estimated Cost |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+|sonnet-5 | 16 | 27,654 | 651,757 | 10,066 | **~689,493** | **~$0.34** |
 
 *Prompt 2: Run the VoiceOver Specialist*
 
-| Model | Input | Cache Create | Cache Read | Output | Total Tokens |
-| ---: | ---: | ---: | ---: | ---: | ---: |
-|sonnet-5 | 20 | 125,510 | 879,982 | 23,228 | **~1,028,740** |
+| Model | Input | Cache Create | Cache Read | Output | Total Tokens | Total Estimated Cost |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+|sonnet-5 | 20 | 125,510 | 879,982 | 23,228 | **~1,028,740** | **~$0.9** |
