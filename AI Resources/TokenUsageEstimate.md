@@ -15,6 +15,7 @@ Here are a few key points:
 - The numbers reported here are approximate.
 - Token counts can vary significantly depending on the model used.
 - AI output can vary on every run.
+- Estimated costs use pay-as-you-go API prices in USD as of September 2026. If you use a Claude subscription plan, your usage counts against the plan's allowance instead.
 - The second model row in a demo's totals (`sonnet-4-6`) represents tokens consumed by subagents — either subagents spawned within a Claude Agent conversation (Lesson 1), or Conductor's separate review pass over a reviewed branch (Lesson 2).
 - Throughout this course, use `/usage` in an Xcode conversation with Claude Agent to learn more about your usage quota and costs.
 
@@ -26,7 +27,7 @@ Here are a few key points:
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 |sonnet-5 | 74 | 520,335 | 3,794,964 | 76,123 | |
 |sonnet-4-6 | 57 | 127,581 | 1,561,909 | 12,191 | |
-|**Totals** | | | | | **~6,093,234** | **~$8.2** |
+|**Totals** | | | | | **~6,093,234** | **~$5.02** |
 
 **Per-prompt breakdown**
 
@@ -86,7 +87,7 @@ Conductor ran three parallel sessions, each auditing the implementation against 
 | ---: | ---: | ---: | ---: | ---: | ---: |---: |
 |sonnet-5 | 208 | 906,254 | 12,667,445 | 77,814 | |
 |sonnet-4-6 | 19 | 118,303 | 859,235 | 24,558 | |
-|**Totals** | | | | | **~14,653,836** | **~$8.2** |
+|**Totals** | | | | | **~14,653,836** | **~$8.27** |
 
 *Session 1: Audit Against Goals and Non-Goals*
 
@@ -130,4 +131,4 @@ Each specialist agent ran as its own single-prompt conversation.
 
 | Model | Input | Cache Create | Cache Read | Output | Total Tokens | Total Estimated Cost |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-|sonnet-5 | 20 | 125,510 | 879,982 | 23,228 | **~1,028,740** | **~$0.9** |
+|sonnet-5 | 20 | 125,510 | 879,982 | 23,228 | **~1,028,740** | **~$0.91** |
